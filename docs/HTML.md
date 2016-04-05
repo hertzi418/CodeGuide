@@ -51,13 +51,7 @@
  优先使用最新版本的IE 和 Chrome 内核；
  
 ```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-    </head>
-    ...
-</html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 ```
 ### 属性顺序
 HTML 属性应该按照特定的顺序出现以保证易读性；
