@@ -51,7 +51,9 @@
  - 表示结构：.hd, .bd, .ft, .col, .section；
  - 通用元素：.tb, .nav, .list, .item, .tag, .pic, .info
 
-###注释
+&nbsp;
+
+### 注释
 注释统一用'/* */'（scss中也不要用'//'），具体参照右边的写法；
 缩进与下一行代码保持一致；
 可位于一个代码行的末尾，与代码间隔一个空格。
@@ -77,13 +79,13 @@
 }
 ```
  
-###不要使用@import
+### 不要使用@import
 与 `<link>` 相比，`@import` 要慢很多，不光增加额外的请求数，还会导致不可预料的问题。
 
 ### 链接的样式顺序
 a:link -> a:visited -> a:hover -> a:active（lvha）
 
-###带前缀的属性
+### 带前缀的属性
 当使用特定厂商的带有前缀的属性时，通过缩进的方式，让每个属性的值在垂直方向对齐，这样便于多行编辑。
 
     '-webkit' : Webkit内核： 主要代表为Chrome和Safari
@@ -91,7 +93,7 @@ a:link -> a:visited -> a:hover -> a:active（lvha）
         '-ms' : Trident内核：主要代表为IE浏览器
           '-o': Presto内核： 主要代表为Opera
           
-###属性缩写
+### 属性缩写
 在可以使用缩写的情况下，尽量使用缩写形式（无继承关系时使用缩写，存在继承关系使用分拆方式）
 
 可缩写的属性有：
@@ -114,7 +116,7 @@ background-position: top right;
 /* 可缩写为*/
 background: #000 url(images/bg.png) no-repeat top right;
 ```
-###清除浮动
+### 清除浮动
 当元素需要撑起高度以包含内部的浮动元素时，通过对伪类设置 clear 或触发 BFC 的方式进行 clearfix。尽量不使用增加空标签的方式。
 伪类设置 clear：
 ```css
@@ -126,7 +128,7 @@ background: #000 url(images/bg.png) no-repeat top right;
     position 非 static
     overflow 非 visible
     
-###正确使用display属性
+### 正确使用display属性
 display属性会影响页面的渲染，请合理使用。
 
  - display: inline后不应该再使用 width、height、margin、padding 以及 float；
@@ -134,10 +136,10 @@ display属性会影响页面的渲染，请合理使用。
  - display: block 后不应该再使用 vertical-align；
  - display: table-* 后不应该再使用 margin 或者 float
 
-###不滥用 Float
+### 不滥用 Float
 float在渲染时计算量比较大，尽量减少使用。
 
-###更高效地使用选择器
+### 更高效地使用选择器
 CSS 选择器对性能的影响主要在于浏览器匹配选择器和文档元素时所消耗的时间，所以优化选择器的原则是应尽量避免使用消耗更多匹配时间的选择器。 CSS 选择器的匹配机制是从右到左进行匹配的，了解了这个机制后，你懂的。
 
  - 避免使用通用选择器
@@ -176,7 +178,7 @@ div#con{...}
  ### vue 文件使用样式，不允许使用 scoped 作用域，而应该使用命名空间
   因为每个使用了 scoped 的样式 引用了外部文件，都会重复打包，增加了代码量
 
-###杂项
+### 杂项
 
  - 使用字体图标
 
