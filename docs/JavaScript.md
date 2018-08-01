@@ -84,7 +84,7 @@ var a = {
     
  ```
  
-###声明变量
+### 声明变量
  
  - 每个变量必须声明，并使用单var模式；变量声明必须放在函数顶部，避免声明提前的问题。
 ```javascript
@@ -119,7 +119,7 @@ var a = {
     };
 ```
     
-###注释
+### 注释
 
  - 单行注释；
  必须独占一行。`//` 后跟一个空格，缩进与下一行被注释说明的代码一致。
@@ -181,7 +181,7 @@ this.fire(
 );
 ```
 
-###杂项
+### 杂项
 - 拼接字符串，需根据实际情况进行合理的转义；
 ```javascript
     
@@ -197,9 +197,7 @@ var str = '<a href="/?key=' + htmlEncode(urlEncode(value)) + '">link</a>';
 // JavaScript字符串 转义 + HTML 转义
 var str = '<button onclick="check(\'' + htmlEncode(strLiteral(name)) + '\')">提交</button>';
 ```
-- 使用模板引擎；
-推荐使用 [artTemplate][1]
-具体用法请移步官方文档。
+
     
 
 
